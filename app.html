@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Picker</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<img src="images/SwigLogo.png" alt="swig cups" width="200">
+<h1>Pick Your Drink</h1>
+
+<p>Click to get a random Drink</p>
+
+<button onclick="pickDrink()">Pick a Drink</button>
+
+<p id="result"></p>
+
+<script>
+function pickDrink() {
+  let drinks = [
+    "Dirty Dr Pepper",
+    "Raspberry Dream",
+    "Super Trooper",
+    "Strawberry Breese",
+    "Cherry Bomb",
+    "Hula Girl"
+  ];
+
+  let random = Math.floor(Math.random() * drinks.length);
+
+  document.getElementById("result").innerText = drinks[random];
+}
+</script>
+
+<br><br>
+
+<a href="scratch.html">Back to Scratch Page</a>
+
+</body>
+</html>
