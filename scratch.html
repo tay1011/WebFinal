@@ -3,89 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scratch Page</title>
+    <title>Swig Page</title>
 
-  <!-- link CSS -->
-  <link rel="stylesheet" href="styles.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<h1>Swig!!!</h1>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Resume</a>
+    <div>
+      <a class="nav-link d-inline text-white" href="scratch.html">Swig Page</a>
+    </div>
+  </div>
+</nav>
 
-<!-- anchor aink -->
-<a href="#video">Jump to Video</a>
+<!-- main content -->
+<div class="container mt-5">
+  <div class="card p-4 shadow-lg text-center">
 
-<!-- DIV 1 -->
-<div class="section">
-  <h2>Why I Love It</h2>
-  <p>I just really love soda</p>
+    <h1>Swig</h1>
+    <h4 class="text-muted mb-4">Soda & Drink Culture</h4>
+
+    <hr>
+
+    <h3 class="section-title">About Swig</h3>
+    <p>Swig is a popular soda shop known for customizable drinks and flavored sodas.</p>
+
+    <h3 class="section-title">Popular Drinks</h3>
+    <ul>
+      <li>Dirty Dr Pepper</li>
+      <li>Raspberry Dream</li>
+      <li>Texas Tab</li>
+    </ul>
+
+    <h3 class="section-title">Soda Consumption Data</h3>
+
+    <iframe 
+      src="https://public.tableau.com/views/Sodaconsumption/Sodaconsumption?:showVizHome=no&:embed=true"
+      width="100%" 
+      height="600">
+    </iframe>
+
+    <a href="index.html" class="btn btn-primary mt-4">
+      Back to Resume
+    </a>
+
+  </div>
 </div>
-
-<!-- Nested List -->
-<div class="section">
-    <h2>MY FAVORITES</h2>
-
-    <ol>
-    <li>
-        <strong>Top 5 Drinks</strong>
-        <ul>
-        <li>Dirty Little Secret</li>
-        <li>Cherry Bomb</li>
-        <li>Raspberry Dream</li>
-        <li>Dew Gooder</li>
-        <li>Super Trooper</li>
-        </ul>
-    </li>
-
-    <li>
-        <strong>Top 5 Cookies (of all time)</strong>
-        <ul>
-        <li>Coconut Cookie</li>
-        <li>Sugar Cookie</li>
-        <li>OG Birthday Cookie</li>
-        <li>Mini Pumpkin Cookie</li>
-        <li>Peanut Butter Cookie</li>
-        </ul>
-    </li>
-    </ol>
-</div>
-
-<!-- image -->
-<div class="section">
-  <img src="swig_cups.jpg" alt="swig logo" width="300">
-</div>
-
-<!-- YouTube -->
-<div class="section" id="video">
-  <h2>Watch This</h2>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/-NsQGXqZWSE"
-frameborder="0"
-allowfullscreen>
-</iframe>
-</div>
-
-<!-- Tableau Embed -->
-<div class="section">
-  <h2>Data Visualization</h2>
-
- <iframe 
-  src="https://public.tableau.com/views/Sodaconsumption/Sodaconsumption?:showVizHome=no&:embed=true"
-  width="800" 
-  height="600">
-</iframe>
-
-</div>
-
-<br><br>
-<!-- Link to App -->
-<a href="app.html">Play My Game</a>
-
-<br><br>
-
-<!-- Back to Home -->
-<a href="index.html">Back to Resume</a>
 
 </body>
 </html>

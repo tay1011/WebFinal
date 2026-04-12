@@ -1,11 +1,25 @@
-/* GLOBAL */
+/* BACKGROUND */
 
 body {
   background: linear-gradient(to bottom right, #ffe6ea, #ffffff);
   font-family: Arial, sans-serif;
-  color: #333333;
+  color: #333;
   margin: 0;
   text-align: center;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 900px;
+}
+
+/* CARD */
+
+.card {
+  border-radius: 20px;
+  border: none;
+  animation: fadeIn 0.6s ease-in;
 }
 
 /* HEADINGS */
@@ -13,65 +27,20 @@ body {
 h1 {
   color: #cc0000;
   font-size: 42px;
-  margin-top: 20px;
 }
 
-h2 {
+h2, h3 {
   color: #cc0000;
-  font-size: 28px;
-  margin-top: 20px;
 }
-
-h3 {
-  color: #cc0000;
-  margin-top: 20px;
-}
-
-/* LINKS */
-
-a {
-  color: #cc0000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* BUTTONS (Bootstrap override) */
-
-.btn-primary {
-  background-color: #cc0000 !important;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  transition: all 0.2s ease;
-}
-
-.btn-primary:hover {
-  background-color: #a80000 !important;
-  transform: scale(1.05);
-}
-
-/* CARD / MAIN CONTENT */
-
-.card {
-  border-radius: 20px;
-  border: none;
-}
-
-/* SECTION TITLES */
 
 .section-title {
-  color: #cc0000;
-  font-weight: 600;
   margin-top: 25px;
+  font-weight: 600;
 }
 
 /* LISTS */
 
-ul, ol {
+ul {
   list-style-position: inside;
   padding: 0;
   margin: 0 auto;
@@ -83,18 +52,25 @@ li {
   margin: 5px 0;
 }
 
-/* MEDIA */
+/* LINKS */
 
-img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
+a {
+  text-decoration: none;
 }
 
-iframe {
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px;
+/* BUTTONS */
+
+.btn-primary {
+  background-color: #cc0000 !important;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #a80000 !important;
+  transform: scale(1.05);
 }
 
 /* NAVBAR */
@@ -103,11 +79,14 @@ iframe {
   background-color: #cc0000 !important;
 }
 
-/* OPTIONAL: subtle card animation */
+/* MEDIA */
 
-.card {
-  animation: fadeIn 0.6s ease-in;
+iframe {
+  border-radius: 12px;
+  margin-top: 20px;
 }
+
+/* ANIMATION */
 
 @keyframes fadeIn {
   from {
