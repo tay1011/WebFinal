@@ -5,69 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swig Page</title>
 
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Resume</a>
-    <div>
-      <a class="nav-link d-inline text-white" href="scratch.html">Swig Page</a>
-    </div>
-  </div>
-</nav>
-
-<!-- main content -->
-<div class="container mt-5">
-  <div class="card p-4 shadow-lg text-center">
-
-    <h1>Swig</h1>
-    <h4 class="text-muted mb-4">Soda & Drink Culture</h4>
-
-    <hr>
-
-    <h3 class="section-title">About Swig</h3>
-    <p>Swig is a popular soda shop known for customizable drinks and flavored sodas.</p>
-
-    <h3 class="section-title">Popular Drinks</h3>
-    <ul>
-      <li>Dirty Dr Pepper</li>
-      <li>Raspberry Dream</li>
-      <li>Texas Tab</li>
-    </ul>
-
-    <div class="section">
-
-  <h2>Swig Video</h2>
-  <iframe 
-    width="100%" 
-    height="400"
-    src="https://www.youtube.com/embed/-NsQGXqZWSE" 
-    title="Swig Video"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+<!-- NAVIGATION -->
+<div class="section">
+    <h2>Navigation</h2>
+    <a href="index.html">Resume</a> |
+    <a href="app.html">Drink Picker App</a>
 </div>
 
-    <h3 class="section-title">Soda Consumption Data</h3>
+<!-- TITLE -->
+<div class="section">
+    <h1 id="top">Swig</h1>
+    <h3>Soda & Drink Culture</h3>
+</div>
 
+<!-- IMAGE -->
+<div class="section">
+    <h2>Swig Drinks</h2>
+    <img src="SwigLogo.png" alt="Swig Drinks" width="200">
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+    <h2>About Swig</h2>
+    <p>
+        Swig is a popular soda shop known for customizable drinks and flavored sodas.
+        Customers mix syrups, creams, and fruits to create unique drinks.
+    </p>
+</div>
+
+<!-- LIST REQUIREMENT -->
+<div class="section">
+    <h2>Popular Drinks Ranked</h2>
+
+    <ol>
+        <li>Top Favorite Sodas
+            <ul>
+                <li>Dirty Dr Pepper</li>
+                <li>Raspberry Dream</li>
+                <li>Hula Girl</li>
+                <li>Texas Tab</li>
+                <li>Cherry Bomb</li>
+            </ul>
+        </li>
+        <li>Top Favorite Refreshers
+            <ul>
+                <li>Strawberry Breeze</li>
+                <li>Mango Breeze</li>
+                <li>The Fighter</li>
+                <li>Summer Splash</li>
+                <li>Berry Nice</li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+<!-- VIDEO -->
+<div class="section">
+    <h2>Swig Video</h2>
     <iframe 
-      src="https://public.tableau.com/views/Sodaconsumption/Sodaconsumption?:showVizHome=no&:embed=true"
-      width="100%" 
-      height="600">
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/-NsQGXqZWSE"
+        title="YouTube video"
+        allowfullscreen>
     </iframe>
-
-
-<div class="mt-4">
-  <a href="app.html" class="btn btn-primary me-2">Try the Drink Picker</a>
-  <a href="index.html" class="btn btn-outline-dark">Back to Resume</a>
 </div>
 
+<!-- TABLEAU -->
+<div class="section">
+    <h2>Soda Consumption Data</h2>
+    <iframe 
+        src="https://public.tableau.com/views/Sodaconsumption/Sodaconsumption?:showVizHome=no&:embed=true"
+        width="800" 
+        height="500">
+    </iframe>
+</div>
+
+<!-- ANCHOR LINK -->
+<div class="section">
+    <a href="#top">Back to Top</a>
+</div>
 
 </body>
 </html>
