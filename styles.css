@@ -81,3 +81,37 @@ button:hover, .btn-primary:hover {
   margin-top: 20px;
   font-weight: bold;
 }
+
+/* Center all main content */
+body {
+  text-align: center;
+}
+
+/* Center sections nicely */
+.section {
+  background-color: #ffffff;
+  border: 2px solid #cc0000;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 20px auto;
+  width: 70%;
+  text-align: center;
+}
+
+/* Center images */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Center lists cleanly */
+ol, ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+/* Center iframe (YouTube + Tableau) */
+iframe {
+  display: block;
+  margin: 20px auto;
+}
