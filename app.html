@@ -24,18 +24,22 @@
 <!-- MAIN CONTENT -->
 <div class="container text-center mt-5">
 
-    <img src="./SwigLogo.png" alt="Swig Logo" width="180" class="mb-3">
-
+    <!-- TITLE -->
     <h1>Pick Your Drink</h1>
-    <p>Click below to get a random drink suggestion</p>
+    <p class="mb-4">Click below to get a random drink suggestion</p>
+
+    <!-- IMAGE -->
+    <div class="section">
+        <img src="./SwigLogo.png" alt="Swig Logo" width="180">
+    </div>
 
     <!-- BUTTON -->
-    <button class="btn btn-primary mt-2" onclick="pickDrink()">Pick a Drink</button>
+    <div class="section">
+        <button class="btn btn-primary" onclick="pickDrink()">Pick a Drink</button>
+        <p id="result" class="mt-3"></p>
+    </div>
 
-    <!-- RESULT -->
-    <p id="result" class="mt-3"></p>
-
-    <!-- NAV LINKS -->
+    <!-- NAVIGATION -->
     <div class="mt-4">
         <a href="scratch.html" class="btn btn-outline-dark me-2">Swig Page</a>
         <a href="index.html" class="btn btn-outline-dark">Resume</a>
@@ -56,7 +60,6 @@ function pickDrink() {
   ];
 
   let random = Math.floor(Math.random() * drinks.length);
-
   document.getElementById("result").innerText = drinks[random];
 }
 </script>
